@@ -10,6 +10,15 @@ function random_vector(n)
     return v / norm(v)  
 end
 
+
+#Basis d=2
+s2 = Array{Complex{Float64}}(undef, 2, 2, 4)
+
+s2[:,:,1] = [1 0; 0 1]/sqrt(2)
+s2[:,:,2] = [0 1; 1 0]/sqrt(2)
+s2[:,:,3] = [0 -1im; 1im 0]/sqrt(2)
+s2[:,:,4] = [1 0; 0 -1]/sqrt(2)
+
 #Basis d=3, Gell-Mann matrices
 s3 = Array{Complex{Float64}}(undef, 3, 3, 9)
 
